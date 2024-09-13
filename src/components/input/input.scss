@@ -1,0 +1,51 @@
+label{
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: var(--primary);
+
+    #error{
+        font-size: 0.6rem;
+        color: crimson;
+        display: flex;
+        align-items: center;
+        gap: 0.6em;
+    }
+}
+
+
+#input-div{
+    border: 2px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    margin: 0.6em 0 1.2em;
+
+    input{
+        width: 100%;
+        padding: 0.8em 1em;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+
+    input::placeholder{
+        text-transform: capitalize;
+    }
+
+    &:has(input:focus){
+        border: 2px solid var(--primary);
+    }
+
+    &:has(input.error){
+        border: 2px solid crimson;
+    }
+
+    // for icon
+    span{
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        margin: 0 0.5em;
+    }    
+}

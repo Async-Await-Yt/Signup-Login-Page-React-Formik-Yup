@@ -1,0 +1,14 @@
+form {
+    max-width: 768px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button{
+        width: 20%;
+        background: var(--primary);
+        color: white;
+    }
+}

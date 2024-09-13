@@ -1,0 +1,17 @@
+
+button{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    padding: 0.6em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 1em auto;
+    
+    &:active{
+        transform: scale(0.98);
+    }
+}
